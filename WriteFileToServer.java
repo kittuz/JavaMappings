@@ -7,10 +7,10 @@ public class WriteFileToServer {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String SFTPHOST = "192.168.1.10";
+		String SFTPHOST = "HOST/IP";
         int SFTPPORT = 22;
-        String SFTPUSER = "manoj";
-        String SFTPPASS = "manoj";
+        String SFTPUSER = "UserID";
+        String SFTPPASS = "Password";
         String SFTPWORKINGDIR = "/";
 
         Session session = null;
