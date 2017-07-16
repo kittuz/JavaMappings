@@ -7,8 +7,8 @@ public class SendSMS {
   // Find your Account Sid and Token at twilio.com/user/account
   public static final String VERSION = "7.12.0";
   public static final String JAVA_VERSION = System.getProperty("java.version");
-  public static final String ACCOUNT_SID = "AC4104ba41280a8a6c467a13a935482f5b";
-  public static final String AUTH_TOKEN = "7c0e30997c1c7803918c50538827c329";
+  public static final String ACCOUNT_SID = "SID";
+  public static final String AUTH_TOKEN = "TOKEN";
   public static void main(String[] args)
   {
     Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
