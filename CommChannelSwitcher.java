@@ -10,7 +10,7 @@ public class CommChannelSwitcher {
  
  Authenticator.setDefault (new Authenticator() {
   protected PasswordAuthentication getPasswordAuthentication() {
-  return new PasswordAuthentication ("khavatkoppm", "khavama@9".toCharArray());
+  return new PasswordAuthentication ("userid", "Password".toCharArray());
   }
  });
  
