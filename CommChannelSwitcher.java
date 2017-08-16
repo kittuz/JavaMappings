@@ -31,7 +31,7 @@ public class CommChannelSwitcher {
  }
  
  public static void main(String[] args) {
- String getString = "http://snpidci.life.san:52000/AdapterFramework/ChannelAdminServlet?party=&service=ARIBA_DEV00&channel=Ariba_Supplier_Profile_SOAP_Receiver&action=start";
+ String getString = "http://host:port/AdapterFramework/ChannelAdminServlet?party=&service=ARIBA_DEV00&channel=Ariba_Supplier_Profile_SOAP_Receiver&action=start";
  CommChannelSwitcher httpCaller = new CommChannelSwitcher();
  System.out.println(httpCaller.setCCState(getString));
  }
