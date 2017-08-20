@@ -1,4 +1,4 @@
-import java.io.Console;
+package com.sap.mapping.java;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -18,7 +18,7 @@ public static String MsgID(String msgid,String Const)
 {
 String U_Counter="";
 Properties properties = new Properties();
-File propertiesfile = new File("C:\\Users\\mkhavatkopp\\Desktop\\PI\\Test\\msgid.txt");
+File propertiesfile = new File("D:/usr/sap/MsgId.txt");
 try
 {
 propertiesfile.createNewFile();
@@ -46,12 +46,11 @@ return "Error:File not updated";
 }
 return U_Counter;
 }
-
 public static String getCounter(String Const , String opr)
 {
 String counter = "";
 Properties properties = new Properties();
-File propertiesfile = new File("C:\\Users\\mkhavatkopp\\Desktop\\PI\\Test\\counter.txt");
+File propertiesfile = new File("D:/usr/sap/Counter.txt");
 try
 {
 propertiesfile.createNewFile();
@@ -68,7 +67,6 @@ if (number == null)
 number = "0";
 counter = String.valueOf(Integer.parseInt(number) + 1);
 properties.setProperty(Const, counter);
-
 }
 else
 {
@@ -82,8 +80,6 @@ else
 		counter = number;
 	}
 }
-
-
 try
 {
 properties.store(new FileOutputStream(propertiesfile), null);
@@ -93,3 +89,4 @@ return "Error:File not updated";
 return counter;
 }
 }
+		 
