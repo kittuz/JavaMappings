@@ -1,0 +1,16 @@
+String attachmentID = null; 
+GlobalContainer globalContainer = container.getGlobalContainer(); 
+InputAttachments inputAttachments = globalContainer.getInputAttachments();
+ 
+if(inputAttachments.areAttachmentsAvailable()) 
+{
+Collection<String> CollectionIDs = inputAttachments.getAllContentIds(true);
+Object[] arrayObj = CollectionIDs.toArray();
+attachmentID = (String)arrayObj[0];
+Attachment attachment = inputAttachments.getAttachment(attachmentID);
+int attachmentsize = attachment.getContent().length;
+return "Attachment Name : "+attachmentID +"  Attachment Size : "+attachmentsize+" bytes";
+}
+else {
+return "no attachment found";
+}
