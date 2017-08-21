@@ -1,0 +1,18 @@
+ 
+String Content = "";
+String AttachmentID ="";
+GlobalContainer globalContainer = container.getGlobalContainer();
+InputAttachments inputAttachments = globalContainer.getInputAttachments();
+if(inputAttachments.areAttachmentsAvailable())
+{
+     Collection<String> CollectionIDs = inputAttachments.getAllContentIds(true);
+     Object[] arrayObj = CollectionIDs.toArray();
+     int attachmentCount = arrayObj.length;
+     for(int i =0;i<attachmentCount;i++)
+     {
+            AttachmentID =(String) arrayObj<i>;
+              Attachment attachments =inputAttachments.getAttachment(AttachmentID);
+          Content = Content + new String(attachments.getContent());
+      }
+}
+return Content;
