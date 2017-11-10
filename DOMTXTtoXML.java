@@ -1,6 +1,6 @@
 package example;
 
-/*https://answers.sap.com/questions/352212/remove-header-and-footer-from-sender-file.html?childToView=352345#answer-352345*/
+
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
